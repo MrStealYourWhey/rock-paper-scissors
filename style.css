@@ -1,0 +1,38 @@
+body {
+    background-color: #145374;
+}
+
+.button {
+    margin: 10px;
+    width: 150px;
+    height: 100px;
+    color: #00334e;
+    background-color: #f6f5f5;
+    border-radius: 10%;
+}
+
+.buttons {
+    margin-bottom: 100px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: #ee6f57;
+    color: #00334e;
+    text-align: center;
+    line-height: 30px;
+}
+
+#rscore {
+    color: #00334e;
+    background-color: #f6f5f5;
+    border-radius: 5%;
+    margin-top: 30px;
+    margin-bottom: 20px;;
+    width: 150px;
+    height: 40px;
+}
