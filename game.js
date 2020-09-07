@@ -1,7 +1,8 @@
 play();
 
-let computerScore = 0
-let userScore = 0
+let computerScore = 0;
+let userScore = 0;
+let roundCount = 0;
 function game (userSelection)
 {
     let choices = ["rock", "paper", "scissors"];
@@ -32,8 +33,10 @@ function game (userSelection)
             document.getElementById("result").innerHTML = ("You win! " + userSelection + " beats " + computerSelection + ".")
             userScore++
         }
+    roundCount += 1; 
     document.getElementById("uscore").innerHTML = userScore;
-    document.getElementById("cscore").innerHTML = computerScore;   
+    document.getElementById("cscore").innerHTML = computerScore;
+    document.getElementById("round").innerHTML = roundCount;    
     }
     playRound(computerSelection)   
 }
@@ -53,9 +56,11 @@ rscore.addEventListener('click', reset);
 function reset() {
     userScore = 0;
     computerScore = 0;
+    roundCount = 0;
     document.getElementById("uscore").innerHTML = userScore;
     document.getElementById("cscore").innerHTML = computerScore; 
     document.getElementById("result").innerHTML = "";
+    document.getElementById("round").innerHTML = roundCount;
 }
 
 
